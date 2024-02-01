@@ -68,15 +68,25 @@ main{
     height: 100vh;
     background-color:#3498db;
     position: relative;
-    right: -300px;
+    
     transition: 0.5s;
-    /* width: 0px; */
+
     z-index: 99;
     width: 300px;
+    right: -300px;
+    display: none;
 }
 .show-sidebar{
     transition: 0.5s;
     right: 0px;
+    display: block;
+    
+}
+.close-sidebar{
+    
+    right: -300px;
+    display: none;
+
 }
 .content{
     width: calc(100% - 300px);
