@@ -51,6 +51,7 @@
       height: 32px;
     }
   }
+
 .d-none{
     display: none;
 }
@@ -67,14 +68,15 @@ main{
     height: 100vh;
     background-color:#3498db;
     position: relative;
-    /* right: -300px; */
-    transition: 0.8s;
+    right: -300px;
+    transition: 0.5s;
     /* width: 0px; */
     z-index: 99;
+    width: 300px;
 }
 .show-sidebar{
-    transition: 0.8s;
-    width:300px;
+    transition: 0.5s;
+    right: 0px;
 }
 .content{
     width: calc(100% - 300px);
@@ -85,6 +87,7 @@ main{
     align-items: center;
     /* background-color: red; */
 }
+
 button{
          
       padding: 10px 20px;
@@ -102,6 +105,11 @@ button{
 button:hover {
     background-color: #ffffff;
     color: #3498db;
+}
+
+.buttonClose{
+    width: 100%;
+    background-color: #80adcb;
 }
 
 

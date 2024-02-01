@@ -1,8 +1,15 @@
-const button = document.querySelector("button");
+const buttonshow = document.querySelector(".buttonshow");
 const sidebar = document.querySelector(".sidebar");
 const overlay = document.querySelector(".overlay");
-button.onclick = function() {
+const buttonClose =document.querySelector(".buttonClose");
+buttonshow.onclick = function() {
 
     sidebar.classList.toggle("show-sidebar");
-    // overlay.classList.toggle("d-none");
+    overlay.classList.toggle("d-none");
+    // buttonClose.classList.toggle("close-sidebar");
+}
+buttonClose.onclick = function() {
+    sidebar.classList.toggle("show-sidebar");
+    overlay.classList.toggle("d-none");
+
 }
