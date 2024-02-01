@@ -170,8 +170,7 @@ main{
     z-index: 99;
     width: 20%;
     right: -300px;
-    display: flex;
-    justify-content: center;
+    display: none;
 }
 .show-sidebar{
     transition: 0.5s;
