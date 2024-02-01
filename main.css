@@ -8,6 +8,7 @@
     position:absolute;
     width: inherit;
     height: 100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
@@ -160,32 +161,27 @@ main{
 }
 .sidebar{
     
-    height: 100vh;
-    /* background: linear-gradient(to right, #fe4252, #ffa176, #fed054); */
-    background-color: #f3a54c;
-    position: relative;
-    
-    transition: 0.5s all;
-
-    z-index: 99;
-    width: 30%;
-    right: -300px;
-    display: none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background-color: #76796c;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 .show-sidebar{
-    transition: 0.5s all;
-    right: 0px;
-    display: block;
-    
+    transition: 0.5s;
+    width: 30%;
 }
 .close-sidebar{
-    transition: 0.5s all;
-    right: -300px;
-    display: none;
+    transition: 0.5s;
+    width: 0;
 
 }
 .content{
-    width: calc(70%);
+    width: 70%;
     height: 100vh;
     display: flex;
     justify-content: center;
